@@ -1,0 +1,103 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.pantrix.analytics",
+    "module": "pantrix-widget-noop",
+    "version": "1.0.0-alpha.01",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "pantrix-widget-noop-1.0.0-alpha.01.aar",
+          "url": "pantrix-widget-noop-1.0.0-alpha.01.aar",
+          "size": 2001,
+          "sha512": "c6d2879d96ae46da1006fdc9f821df6148de1f2fb3f7b6add596eedeb017916b3e16944e3eb26774a1c3957a4ab89ea49f7fb511ce185a714a1a6f600709bf8b",
+          "sha256": "8ac7033443bb1967ac8aebc7f83bf3baf40b132445282ef51db6b21f7381e00a",
+          "sha1": "3a8bba119ad6d25585df3fb6023a231bb9ea81b4",
+          "md5": "aabe8f87897c69f2d0d2e9e8ebe020fd"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.17.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "pantrix-widget-noop-1.0.0-alpha.01.aar",
+          "url": "pantrix-widget-noop-1.0.0-alpha.01.aar",
+          "size": 2001,
+          "sha512": "c6d2879d96ae46da1006fdc9f821df6148de1f2fb3f7b6add596eedeb017916b3e16944e3eb26774a1c3957a4ab89ea49f7fb511ce185a714a1a6f600709bf8b",
+          "sha256": "8ac7033443bb1967ac8aebc7f83bf3baf40b132445282ef51db6b21f7381e00a",
+          "sha1": "3a8bba119ad6d25585df3fb6023a231bb9ea81b4",
+          "md5": "aabe8f87897c69f2d0d2e9e8ebe020fd"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "pantrix-widget-noop-1.0.0-alpha.01-javadoc.jar",
+          "url": "pantrix-widget-noop-1.0.0-alpha.01-javadoc.jar",
+          "size": 263806,
+          "sha512": "beb5f6513ea196d28e3ad249cf7f5faeb652760d21e48e618ce7a6dda38ae5de5a7e76675fe9f96de1292548f36ab7f0d48aecbc4eba264696b2d0e5fc6b219b",
+          "sha256": "a023dd70dbb3827c6ab1eca1d68b5c3be5441b3d6b3c750a65c4dc4b73f75616",
+          "sha1": "99430afadcac598d6c9cdbe8320cfd1eaa8322fa",
+          "md5": "b2868830ae6fc8e223d1388555dda74a"
+        }
+      ]
+    }
+  ]
+}

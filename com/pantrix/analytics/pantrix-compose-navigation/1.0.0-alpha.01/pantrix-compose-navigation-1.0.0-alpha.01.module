@@ -1,0 +1,96 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.pantrix.analytics",
+    "module": "pantrix-compose-navigation",
+    "version": "1.0.0-alpha.01",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "pantrix-compose-navigation-1.0.0-alpha.01.aar",
+          "url": "pantrix-compose-navigation-1.0.0-alpha.01.aar",
+          "size": 8555,
+          "sha512": "dd91b946792f30e10f566683948a9e586a4877fd6ba6480b2e56628fbdad5822a7890aca190105106f52808c28d85809b3d759f900a154cde9488568beda50dc",
+          "sha256": "8aaf73163466ee15d24492b92e5d1c59298e8908c6385a19a6f5ea47059e4f30",
+          "sha1": "fbfc75968a343402c94345fa30823606722abfe8",
+          "md5": "2305d1b0d9b6e0a10e1edf29ab6e38a0"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "pantrix-compose-navigation-1.0.0-alpha.01.aar",
+          "url": "pantrix-compose-navigation-1.0.0-alpha.01.aar",
+          "size": 8555,
+          "sha512": "dd91b946792f30e10f566683948a9e586a4877fd6ba6480b2e56628fbdad5822a7890aca190105106f52808c28d85809b3d759f900a154cde9488568beda50dc",
+          "sha256": "8aaf73163466ee15d24492b92e5d1c59298e8908c6385a19a6f5ea47059e4f30",
+          "sha1": "fbfc75968a343402c94345fa30823606722abfe8",
+          "md5": "2305d1b0d9b6e0a10e1edf29ab6e38a0"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "pantrix-compose-navigation-1.0.0-alpha.01-javadoc.jar",
+          "url": "pantrix-compose-navigation-1.0.0-alpha.01-javadoc.jar",
+          "size": 262905,
+          "sha512": "a9f4285ac24c87a9e65d456720fa8f27a1052a3abb74dfabb7bb22c93201ffc3dec5c844a8d494e3ceb8e08d378d195782a49d4975e69d6870231d6f065fdeab",
+          "sha256": "d9e7d60fdcadd705550aec57acd620ee01767583f4c77a9d2cf55e2b0bc9cc4c",
+          "sha1": "be9ecea29a639a0a95211919e6ea4d5918614cfc",
+          "md5": "b2af2c6a93e9aefb8b3945ed39bbdf2b"
+        }
+      ]
+    }
+  ]
+}
