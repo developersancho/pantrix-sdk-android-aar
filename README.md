@@ -5,7 +5,7 @@ observability SDK (analytics + performance + crash/ANR + HTTP) that ships as a s
 plus optional add-ons. Events are uploaded **only to the backend URL you configure** — never to
 Pantrix or any third party. This single file is everything you need to integrate.
 
-- **Current version:** `1.0.0-alpha.01`
+- **Current version:** `1.0.0-beta.01`
 - **Group id:** `com.pantrix.analytics`
 - **Min SDK:** 24 · **compile/target SDK:** 36 · **JVM:** 17
 
@@ -45,7 +45,7 @@ Pantrix or any third party. This single file is everything you need to integrate
 
 ## 1. Artifacts
 
-Everything shares one version (`1.0.0-alpha.01`). The **fused SDK** is the only required
+Everything shares one version (`1.0.0-beta.01`). The **fused SDK** is the only required
 dependency; the rest are opt-in add-ons. The right-hand column lists the **peer libraries you must
 also have** (they're `compileOnly` in the SDK).
 
@@ -93,7 +93,7 @@ The fused SDK is the only thing required to start collecting:
 ```kotlin
 // build.gradle.kts (app)
 dependencies {
-    val pantrix = "1.0.0-alpha.01"
+    val pantrix = "1.0.0-beta.01"
 
     // Required.
     implementation("com.pantrix.analytics:pantrix-sdk:$pantrix")
@@ -291,7 +291,7 @@ Ktor `compileOnly`):
 
 ```kotlin
 dependencies {
-    implementation("com.pantrix.analytics:pantrix-ktor:1.0.0-alpha.01")
+    implementation("com.pantrix.analytics:pantrix-ktor:1.0.0-beta.01")
 
     // Peer dependencies you must provide:
     implementation("io.ktor:ktor-client-core:<your-ktor-version>")
@@ -325,7 +325,7 @@ Add `pantrix-compose` **plus Jetpack Compose** (the module declares Compose `com
 
 ```kotlin
 dependencies {
-    implementation("com.pantrix.analytics:pantrix-compose:1.0.0-alpha.01")
+    implementation("com.pantrix.analytics:pantrix-compose:1.0.0-beta.01")
 
     // Peer dependencies you must provide (use a Compose BOM to align versions):
     implementation(platform("androidx.compose:compose-bom:<your-bom>"))
@@ -359,7 +359,7 @@ Add `pantrix-compose-navigation` **plus Compose and Navigation-Compose** (declar
 
 ```kotlin
 dependencies {
-    implementation("com.pantrix.analytics:pantrix-compose-navigation:1.0.0-alpha.01")
+    implementation("com.pantrix.analytics:pantrix-compose-navigation:1.0.0-beta.01")
 
     // Peer dependencies you must provide:
     implementation(platform("androidx.compose:compose-bom:<your-bom>"))
@@ -392,7 +392,7 @@ Add `pantrix-compose-navigation3` **plus Compose and Navigation 3** (declared `c
 
 ```kotlin
 dependencies {
-    implementation("com.pantrix.analytics:pantrix-compose-navigation3:1.0.0-alpha.01")
+    implementation("com.pantrix.analytics:pantrix-compose-navigation3:1.0.0-beta.01")
 
     // Peer dependencies you must provide:
     implementation(platform("androidx.compose:compose-bom:<your-bom>"))
@@ -472,8 +472,8 @@ Jetpack Glance** (the module declares Glance `compileOnly`):
 
 ```kotlin
 dependencies {
-    debugImplementation("com.pantrix.analytics:pantrix-widget:1.0.0-alpha.01")
-    releaseImplementation("com.pantrix.analytics:pantrix-widget-noop:1.0.0-alpha.01")
+    debugImplementation("com.pantrix.analytics:pantrix-widget:1.0.0-beta.01")
+    releaseImplementation("com.pantrix.analytics:pantrix-widget-noop:1.0.0-beta.01")
 
     // Peer dependency you must provide (debug only — release links the no-op twin):
     debugImplementation("androidx.glance:glance-appwidget:<your-version>")
