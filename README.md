@@ -125,8 +125,9 @@ class App : Application() {
             config = PantrixConfig(
                 token = "px_your_project_token",
                 url = "https://ingest.your-backend.example.com",
-                enableLogging = BuildConfig.DEBUG,
-            )
+            ) {
+                enableLogging(BuildConfig.DEBUG)
+            }
         )
 
         // Debug-only QA overlay (no-op in release via the noop twin).
@@ -141,19 +142,32 @@ Identify the user once known:
 Pantrix.setUser("user-123", mapOf("plan" to "pro", "email" to "user@example.com"))
 ```
 
-> `autoStart` defaults to **true**, so collection begins at `init`. Set `autoStart = false` to gate
+> `autoStart` defaults to **true**, so collection begins at `init`. Set `autoStart(false)` to gate
 > on consent, then call `Pantrix.start()` when the user opts in; `Pantrix.stop()` pauses collection.
 
 ---
 
 ## 5. `PantrixConfig` reference
 
-`PantrixConfig` is a data class — set only what you need.
+`PantrixConfig` is built with the Kotlin DSL or the Java-friendly `PantrixConfig.Builder` —
+`token` and `url` are required, every other option is optional:
+
+```kotlin
+// Kotlin DSL
+val config = PantrixConfig(token = "px_…", url = "https://…") {
+    trackHttpBody(true)
+}
+
+// Java-friendly Builder (equivalent)
+val config = PantrixConfig.Builder("px_…", "https://…")
+    .trackHttpBody(true)
+    .build()
+```
 
 | Field | Type | Default | Purpose |
 | --- | --- | --- | --- |
-| `token` | `String` | `""` | Your project/ingest token. **Required.** |
-| `url` | `String` | `""` | Your self-hosted ingestion endpoint. **Required.** |
+| `token` | `String` | — | Your project/ingest token. **Required** (Builder arg). |
+| `url` | `String` | — | Your self-hosted ingestion endpoint. **Required** (Builder arg). |
 | `enableLogging` | `Boolean` | `false` | Verbose SDK logcat output. |
 | `autoStart` | `Boolean` | `true` | Begin collecting at `init`; `false` waits for `start()`. |
 | `screenBlocklist` | `List<String>` | `[]` | Screen names to never track. |
@@ -489,7 +503,9 @@ fixed at first init.
 | `FULL` | `DATABASE` + sensitive preference values via an Android Keystore AES-GCM key | `net.zetetic:sqlcipher-android` |
 
 ```kotlin
-PantrixConfig(storageEncryption = StorageEncryption.DATABASE)
+PantrixConfig(token = "px_…", url = "https://…") {
+    storageEncryption(StorageEncryption.DATABASE)
+}
 // + implementation("net.zetetic:sqlcipher-android:<your-version>")
 ```
 
@@ -550,12 +566,13 @@ Pantrix.init(
     config = PantrixConfig(
         token = "px_your_project_token",
         url = "https://ingest.your-backend.example.com",
-        enableLogging   = BuildConfig.DEBUG,
+    ) {
+        enableLogging(BuildConfig.DEBUG)
         // Keep everything in debug (for the inspector); prune in release.
-        retentionDays   = if (BuildConfig.DEBUG) 0 else 30,
-        maxStoredEvents = if (BuildConfig.DEBUG) 0 else 50_000,
-        keepSentEvents  = BuildConfig.DEBUG,
-    )
+        retentionDays(if (BuildConfig.DEBUG) 0 else 30)
+        maxStoredEvents(if (BuildConfig.DEBUG) 0 else 50_000)
+        keepSentEvents(BuildConfig.DEBUG)
+    }
 )
 ```
 
