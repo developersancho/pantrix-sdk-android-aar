@@ -1,0 +1,117 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.pantrix.analytics",
+    "module": "pantrix-inspector-noop",
+    "version": "1.0.0-beta.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "pantrix-inspector-noop-1.0.0-beta.3.aar",
+          "url": "pantrix-inspector-noop-1.0.0-beta.3.aar",
+          "size": 4747,
+          "sha512": "632aa385f320f4618ae5f08cc6ed4b15e8bf673abcff2b519b251c7bede62a0e076fa7836b8c8bbaf9c9526a4a70550cb6d9a26f6929d50c550976224ed1bb92",
+          "sha256": "0d8b8ea94b48085b1fbbc8a7aade501a7802b2bd3cfb8d36e5347d8a42847b51",
+          "sha1": "a47ecc93381ca30428968325540c5404b713e5d5",
+          "md5": "5675502ef034f8f2308af9eea5b2b0d1"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.17.0"
+          }
+        },
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.7.1"
+          }
+        },
+        {
+          "group": "com.google.android.material",
+          "module": "material",
+          "version": {
+            "requires": "1.13.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "pantrix-inspector-noop-1.0.0-beta.3.aar",
+          "url": "pantrix-inspector-noop-1.0.0-beta.3.aar",
+          "size": 4747,
+          "sha512": "632aa385f320f4618ae5f08cc6ed4b15e8bf673abcff2b519b251c7bede62a0e076fa7836b8c8bbaf9c9526a4a70550cb6d9a26f6929d50c550976224ed1bb92",
+          "sha256": "0d8b8ea94b48085b1fbbc8a7aade501a7802b2bd3cfb8d36e5347d8a42847b51",
+          "sha1": "a47ecc93381ca30428968325540c5404b713e5d5",
+          "md5": "5675502ef034f8f2308af9eea5b2b0d1"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "pantrix-inspector-noop-1.0.0-beta.3-javadoc.jar",
+          "url": "pantrix-inspector-noop-1.0.0-beta.3-javadoc.jar",
+          "size": 275040,
+          "sha512": "fd31e0c926c059191b0a95e378b062c7e4018b29e53a117a7a9c71bf8b05401b822c66f68b6350fa34d801390839123979c7250d3fcf7d90c8b6010ff68a83bb",
+          "sha256": "f8cd74c044f659b91c3872da29d9eb87d57d4ff0e0a7c87c5eb05ce976b036f8",
+          "sha1": "183c339d12c788b956ed331a6cc64e86af7e17b8",
+          "md5": "411dbb42af91cbe40f04ce52994f40e2"
+        }
+      ]
+    }
+  ]
+}

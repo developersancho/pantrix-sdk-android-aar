@@ -1,0 +1,103 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.pantrix.analytics",
+    "module": "pantrix-ktor",
+    "version": "1.0.0-beta.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "pantrix-ktor-1.0.0-beta.3.aar",
+          "url": "pantrix-ktor-1.0.0-beta.3.aar",
+          "size": 16888,
+          "sha512": "9bb4edcc66b71ea2ebfb02646424b1b8de00fd2d17c676bb63d7bca3a5bb9e41e9ddff791a99e01467e91ea3aa113cce213b059ff40b08bfa291ce9ee45f4925",
+          "sha256": "111df2f024f450d9675d91ea4ace6ca6fa79cacc1886dddb1c035573b4b53dc1",
+          "sha1": "5138836b707c7f3ae42554537b402071b386688e",
+          "md5": "4f94fc87dda21c0439497198b4cc5ecf"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.17.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "pantrix-ktor-1.0.0-beta.3.aar",
+          "url": "pantrix-ktor-1.0.0-beta.3.aar",
+          "size": 16888,
+          "sha512": "9bb4edcc66b71ea2ebfb02646424b1b8de00fd2d17c676bb63d7bca3a5bb9e41e9ddff791a99e01467e91ea3aa113cce213b059ff40b08bfa291ce9ee45f4925",
+          "sha256": "111df2f024f450d9675d91ea4ace6ca6fa79cacc1886dddb1c035573b4b53dc1",
+          "sha1": "5138836b707c7f3ae42554537b402071b386688e",
+          "md5": "4f94fc87dda21c0439497198b4cc5ecf"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "pantrix-ktor-1.0.0-beta.3-javadoc.jar",
+          "url": "pantrix-ktor-1.0.0-beta.3-javadoc.jar",
+          "size": 264367,
+          "sha512": "e46f94564260928ba700a9ae010af98eaf58b7eb63c9b9c036a7b84f24e5b779cc078a7989c5fb681e2a2b337422acc9bbf641fe2ad674c2dfdec1e8bdcc1abe",
+          "sha256": "d358eb5fb42031ae92cbc79261e10fb42928e1c6d669da78a5736875fe28df8f",
+          "sha1": "9d9cc4f762abb7f74c706454a891aa3cdec6f271",
+          "md5": "afed2944d73bffab01d2bacb6b1279de"
+        }
+      ]
+    }
+  ]
+}
