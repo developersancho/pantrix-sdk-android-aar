@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## [Unreleased]
 
+## [1.0.0-beta.4] — 2026-07-24
+- Released `com.pantrix.analytics:pantrix-sdk:1.0.0-beta.4`, `pantrix-inspector:1.0.0-beta.4`, `pantrix-inspector-noop:1.0.0-beta.4` to the `maven-repo` branch.
 ## [1.0.0-beta.3] — 2026-07-19
 - Released `com.pantrix.analytics:pantrix-sdk:1.0.0-beta.3`, `pantrix-inspector:1.0.0-beta.3`, `pantrix-inspector-noop:1.0.0-beta.3` to the `maven-repo` branch.
 ## [v1.0.0-beta.02] — 2026-07-06
