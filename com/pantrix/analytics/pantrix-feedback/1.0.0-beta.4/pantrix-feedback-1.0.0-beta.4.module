@@ -1,0 +1,168 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.pantrix.analytics",
+    "module": "pantrix-feedback",
+    "version": "1.0.0-beta.4",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "pantrix-feedback-1.0.0-beta.4.aar",
+          "url": "pantrix-feedback-1.0.0-beta.4.aar",
+          "size": 69625,
+          "sha512": "3494bb9f78059fdd5275c5726f606e45bf8214576a273afbfcaa6169ef84880a949dba74058f0eb31a7509faf133bb57b6946558ff6bc2969f6cb9a9cd5871a3",
+          "sha256": "1d6fbe2fce710b08903524a05318c8ac9d6da9d086f2ef93cb1fcc47030ba557",
+          "sha1": "8929315735feb3244ca941be69175945525dd06f",
+          "md5": "aa94b436c3bbdf4943cdbc3125f106ef"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.17.0"
+          }
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-viewmodel-ktx",
+          "version": {
+            "requires": "2.10.0"
+          }
+        },
+        {
+          "group": "com.google.android.material",
+          "module": "material",
+          "version": {
+            "requires": "1.13.0"
+          }
+        },
+        {
+          "group": "androidx.compose",
+          "module": "compose-bom",
+          "version": {
+            "requires": "2026.01.00"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "androidx.compose.ui",
+          "module": "ui"
+        },
+        {
+          "group": "androidx.compose.ui",
+          "module": "ui-graphics"
+        },
+        {
+          "group": "androidx.compose.ui",
+          "module": "ui-tooling-preview"
+        },
+        {
+          "group": "androidx.compose.material3",
+          "module": "material3"
+        },
+        {
+          "group": "androidx.compose.material",
+          "module": "material-icons-extended"
+        },
+        {
+          "group": "androidx.activity",
+          "module": "activity-compose",
+          "version": {
+            "requires": "1.12.2"
+          }
+        },
+        {
+          "group": "androidx.lifecycle",
+          "module": "lifecycle-runtime-compose",
+          "version": {
+            "requires": "2.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-android",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "pantrix-feedback-1.0.0-beta.4.aar",
+          "url": "pantrix-feedback-1.0.0-beta.4.aar",
+          "size": 69625,
+          "sha512": "3494bb9f78059fdd5275c5726f606e45bf8214576a273afbfcaa6169ef84880a949dba74058f0eb31a7509faf133bb57b6946558ff6bc2969f6cb9a9cd5871a3",
+          "sha256": "1d6fbe2fce710b08903524a05318c8ac9d6da9d086f2ef93cb1fcc47030ba557",
+          "sha1": "8929315735feb3244ca941be69175945525dd06f",
+          "md5": "aa94b436c3bbdf4943cdbc3125f106ef"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "pantrix-feedback-1.0.0-beta.4-javadoc.jar",
+          "url": "pantrix-feedback-1.0.0-beta.4-javadoc.jar",
+          "size": 378855,
+          "sha512": "993e005c466bfa836324f73fbc4f65e681bd13b287a878cd819325e85d666f29eef02399d3377ce5e6351c9cd7b193a6723fdf84e82b6ca03fd142c6c89e8f45",
+          "sha256": "6fb383dfb18ee19213091e7e0ec42cfa75406d64b23a5d2d790b60c07059362f",
+          "sha1": "fdce150b623d470af41a8ae5177beede9330783f",
+          "md5": "4700b07d6514cfba966006c217615046"
+        }
+      ]
+    }
+  ]
+}
