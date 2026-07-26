@@ -1,0 +1,96 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.pantrix.analytics",
+    "module": "pantrix-gradle-plugin",
+    "version": "1.0.0-beta.5",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "pantrix-gradle-plugin-1.0.0-beta.5.jar",
+          "url": "pantrix-gradle-plugin-1.0.0-beta.5.jar",
+          "size": 77931,
+          "sha512": "090274173931a030b42e11f0b3cfa692afd33e6d13c8902ff82ca8b9eceda48fdd8bbb0e3ceb63aeb3dc39f2be0ad636bcdf5d8905d93e54228be225fa769085",
+          "sha256": "3169485d6ba93059eb99c936027f4f4f37bb69d108ca2b40af5b045ca2f0cff6",
+          "sha1": "9a9b4cbe1ed9862885db673100265a7f5d4f7814",
+          "md5": "c37d4837f4c8dd5c4a6996f818a2701d"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "com.squareup.okhttp3",
+          "module": "okhttp",
+          "version": {
+            "requires": "5.3.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-serialization-json",
+          "version": {
+            "requires": "1.10.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "pantrix-gradle-plugin-1.0.0-beta.5.jar",
+          "url": "pantrix-gradle-plugin-1.0.0-beta.5.jar",
+          "size": 77931,
+          "sha512": "090274173931a030b42e11f0b3cfa692afd33e6d13c8902ff82ca8b9eceda48fdd8bbb0e3ceb63aeb3dc39f2be0ad636bcdf5d8905d93e54228be225fa769085",
+          "sha256": "3169485d6ba93059eb99c936027f4f4f37bb69d108ca2b40af5b045ca2f0cff6",
+          "sha1": "9a9b4cbe1ed9862885db673100265a7f5d4f7814",
+          "md5": "c37d4837f4c8dd5c4a6996f818a2701d"
+        }
+      ]
+    }
+  ]
+}
