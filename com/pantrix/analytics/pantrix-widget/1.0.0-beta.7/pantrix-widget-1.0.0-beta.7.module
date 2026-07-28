@@ -1,0 +1,110 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.pantrix.analytics",
+    "module": "pantrix-widget",
+    "version": "1.0.0-beta.7",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.13"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "pantrix-widget-1.0.0-beta.7.aar",
+          "url": "pantrix-widget-1.0.0-beta.7.aar",
+          "size": 27773,
+          "sha512": "cd2401726c1303a5b1332c160d5ce2e10c20b81cf4c622e9e4fee1279b2892c00bbf8818c86fac15b6cfb0d0f772052b4243947216a185c853a69018f6b935be",
+          "sha256": "845150d9d2ba0733e8c68370fcba76be52510d19686f2fc8c589d0d35dccd5b2",
+          "sha1": "3d0e87d8ea03070d1a8656b97fbba9a903eddb89",
+          "md5": "efeb3d63369d7fa566ab24628af48cd6"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.17.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-android",
+          "version": {
+            "requires": "1.10.2"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.3.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "pantrix-widget-1.0.0-beta.7.aar",
+          "url": "pantrix-widget-1.0.0-beta.7.aar",
+          "size": 27773,
+          "sha512": "cd2401726c1303a5b1332c160d5ce2e10c20b81cf4c622e9e4fee1279b2892c00bbf8818c86fac15b6cfb0d0f772052b4243947216a185c853a69018f6b935be",
+          "sha256": "845150d9d2ba0733e8c68370fcba76be52510d19686f2fc8c589d0d35dccd5b2",
+          "sha1": "3d0e87d8ea03070d1a8656b97fbba9a903eddb89",
+          "md5": "efeb3d63369d7fa566ab24628af48cd6"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "pantrix-widget-1.0.0-beta.7-javadoc.jar",
+          "url": "pantrix-widget-1.0.0-beta.7-javadoc.jar",
+          "size": 280594,
+          "sha512": "29d87b93b6cd1d048610b30ee379659e27f5aa5151dc9b70bb1e1c4303ed19c06aba301780f29c6096edcac2c7d9f3a67a0b73ec3e77d67a6958e001f2ab4671",
+          "sha256": "3c4719367e435309f2acd76d5e7a3ac98c9a16fe46f6cf1e521657932e690cd1",
+          "sha1": "7c8ca32ded21776c6cc55ef8450f5c396c802d49",
+          "md5": "c2a52d6518d1a2717422a0d63d0c2ff4"
+        }
+      ]
+    }
+  ]
+}
