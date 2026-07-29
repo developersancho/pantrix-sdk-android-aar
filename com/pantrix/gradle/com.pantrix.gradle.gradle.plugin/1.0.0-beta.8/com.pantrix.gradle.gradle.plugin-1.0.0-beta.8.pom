@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.pantrix.gradle</groupId>
+  <artifactId>com.pantrix.gradle.gradle.plugin</artifactId>
+  <version>1.0.0-beta.8</version>
+  <packaging>pom</packaging>
+  <name>Pantrix Analytics Gradle Plugin</name>
+  <description>Uploads the R8 mapping.txt and stamps its content UUID into the app so Android crashes deobfuscate.</description>
+  <dependencies>
+    <dependency>
+      <groupId>com.pantrix.analytics</groupId>
+      <artifactId>pantrix-gradle-plugin</artifactId>
+      <version>1.0.0-beta.8</version>
+    </dependency>
+  </dependencies>
+</project>
